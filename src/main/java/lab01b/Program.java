@@ -7,10 +7,9 @@ class Program{
         Scanner scanner=new Scanner(System.in);
         System.out.println("Please enter your mark:");
         Integer mark=scanner.nextInt();
-        // Integer mark=Integer.parseInt(scanner.nextLine());
         scanner.close();
         if(mark<1 || mark>100){
-            throw new ArithmeticException("Error: marks must be between 1..100 ");
+            System.err.println("Error: marks must be between 1..100 ");
         }else if(mark<50){
             System.out.println("Fail");
         }else if(mark>=50 && mark<=60){
