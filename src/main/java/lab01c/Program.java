@@ -27,15 +27,15 @@ public class Program {
             mainCourse = utils.getString("What main dish would you like(Fish, Burgers or Veg)?", scanner);
         } while (!(mainCourse.equalsIgnoreCase("Fish") || mainCourse.equalsIgnoreCase("Burgers")
                 || mainCourse.equalsIgnoreCase("Veg")));
-        Integer potatoes = utils.getInt("How many roast potatoes would you like?", scanner);
-        Integer sprouts = utils.getInt("How many Brussel Sprouts would you like?", scanner);
+        int potatoes = utils.getInt("How many roast potatoes would you like?", scanner);
+        int sprouts = utils.getInt("How many Brussel Sprouts would you like?", scanner);
         System.out.printf("Hello, your lunch is %s with %d roast potatoes and %d Brussel sprouts.\n", mainCourse,
                 potatoes, sprouts);
     }
 
-    public static void convertInputToStonesPounds(Integer pounds) {
-        Integer stones = pounds / 14;
-        Integer reminder = pounds % 14;
+    public static void convertInputToStonesPounds(int pounds) {
+        int stones = pounds / 14;
+        int reminder = pounds % 14;
         System.out.printf("There are %d stones and %d pounds remind.\n", stones, reminder);
     }
 
@@ -49,7 +49,7 @@ public class Program {
             } catch (NumberFormatException err) {
             }
         }
-        Integer pound = (int) (weightInKg * 2.20462);
+        int pound = (int) (weightInKg * 2.20462);
         convertInputToStonesPounds(pound);
     }
 }

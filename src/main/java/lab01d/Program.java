@@ -31,7 +31,7 @@ public class Program {
 
     }
 
-    public static String getGrade(Integer mark) {
+    public static String getGrade(int mark) {
         String grade = null;
         if (mark < 1 || mark > 100) {
             grade = "Error: marks must be between 1..100";

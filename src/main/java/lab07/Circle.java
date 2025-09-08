@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Point;
 
 public class Circle extends Shape {
-    protected Double radius;
+    private Double radius;
 
     public Circle(Color colour, Point position) {
         super(colour, position);

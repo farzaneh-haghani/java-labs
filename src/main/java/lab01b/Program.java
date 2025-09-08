@@ -6,7 +6,7 @@ class Program{
     public static void main(String[] args){
         Scanner scanner=new Scanner(System.in);
         System.out.println("Please enter your mark:");
-        Integer mark=scanner.nextInt();
+        int mark=scanner.nextInt();
         scanner.close();
         if(mark<1 || mark>100){
             System.err.println("Error: marks must be between 1..100 ");
