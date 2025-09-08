@@ -33,6 +33,5 @@ class Program {
                     shape.getClass().getSimpleName(),
                     shape.getColour(), shape.getPosition()[0], shape.getPosition()[1]);
         }
-
     }
 }
