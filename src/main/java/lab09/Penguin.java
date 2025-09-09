@@ -1,6 +1,6 @@
 package lab09;
 
-public class Penguin extends Bird {
+public class Penguin extends Bird implements Swimable {
     public Penguin(String name) {
         super(name);
     }
@@ -8,5 +8,10 @@ public class Penguin extends Bird {
     @Override
     public void makeNest() {
         System.out.println("Penguin made a nest.");
+    }
+
+    @Override
+    public void swim(){
+        System.out.println("Swimming like a Penguin!");
     }
 }

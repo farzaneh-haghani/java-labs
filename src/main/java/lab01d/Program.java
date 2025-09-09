@@ -28,7 +28,6 @@ public class Program {
             String grade = getGrade(marks[i]);
             System.out.printf("%s grade: %s\n", names[i], grade);
         }
-
     }
 
     public static String getGrade(int mark) {

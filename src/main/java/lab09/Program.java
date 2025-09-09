@@ -15,6 +15,12 @@ public class Program {
 
         for (Animal animal : animals) {
             System.out.println(animal.getName());
+            if (animal instanceof Flyable) {
+                ((Flyable) animal).fly();
+            }
+            if (animal instanceof Swimable) {
+                ((Swimable) animal).swim();
+            }
         }
     }
 }
