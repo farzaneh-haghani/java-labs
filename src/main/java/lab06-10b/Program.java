@@ -1,7 +1,6 @@
 package lab06;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 public class Program {
     public static void main(String[] args) {
@@ -22,8 +21,8 @@ public class Program {
         }
 
         ArrayList<Account> accounts = new ArrayList<>();
-        accounts.add(new Account(100, "Bob", 1000));
-        accounts.add(new Account(500, "Linda", 3000));
+        accounts.add(new Account(100, "Linda", 1000));
+        accounts.add(new Account(500, "Bob", 3000));
         accounts.add(new Account(300, "David", 2000));
 
         System.out.println("\n****** Sorting by balance ******");
@@ -34,8 +33,7 @@ public class Program {
         }
 
         System.out.println("\n****** Sorting by owner ******");
-        Collections.sort(accounts);
-
+        Collections.sort(accounts, new SortByOwner());
         for (Account account : accounts) {
             System.out.println(account.getDetails());
         }

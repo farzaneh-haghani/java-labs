@@ -1,6 +1,24 @@
-Course A: Trainer A
-Course B: Trainer B
-Course C: Trainer C
-Course D: Trainer D
-Course E: Trainer E
-Course F: Trainer F
+Web Applications Development: Baradaran Mike
+Systems Development Basics: Baradaran Mike
+Java Fundamentals: Baradaran Mike
+ASP.Net MVC: Baradaran Mike
+JavaScript JQuery and Angular JS: Baradaran Mike
+Java Intermediate: Baradaran Mike
+Systems Development Basics: Potter Steve
+JavaScript JQuery and Angular JS: Potter Steve
+Java Fundamentals: Potter Steve
+ASP.Net MVC: Maalik Sheikh
+Java Intermediate: Maalik Sheikh
+Test Driven Programming: Maalik Sheikh
+Advanced C#: Maalik Sheikh
+Systems Development Basics: Dehnadi Saeed
+JavaScript JQuery and Angular JS: Dehnadi Saeed
+ASP.Net MVC: Dehnadi Saeed
+JavaScript JQuery and Angular JS: Basha Yaroslav
+Systems Development Basics: Basha Yaroslav
+Advanced C#: Basha Yaroslav
+Network Security: Basha Yaroslav
+Web Applications Development: Burgess Andrew
+Network Security: Burgess Andrew
+Cloud computing: Burgess Andrew
+Systems Development Basics: Burgess Andrew

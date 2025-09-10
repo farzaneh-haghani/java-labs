@@ -1,13 +1,10 @@
 package lab06;
 
-public class SortByOwner extends Account {
-    public SortByOwner(int id, String owner, Double balance) {
-        super(id, owner, balance);
-    }
+import java.util.Comparator;
 
+public class SortByOwner implements Comparator<Account> {
     @Override
-    public int compareTo(Account account) {
-        return this.owner.compareTo(account.owner);
-
+    public int compare(Account account1, Account account2) {
+        return account1.owner.compareTo(account2.owner);
     }
 }
