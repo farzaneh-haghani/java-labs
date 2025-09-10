@@ -57,7 +57,9 @@ In these labs, you will design and create a class hierarchy for an employee trac
 Designing the hierarchy
 
 1. Create the following classes. The employee class is provided below. Just copy and paste. We'll need you to concentrate on the other two classes.
+
    ![alt text](image.png)
+   
 2. The Manager class holds an ArrayList<Employee> called employees.
 3. The addEmployee(Employee emp) method adds the emp object to the employees ArrayList.
 4. The getInfo() method of the Manager should first gather the manager's details (using super.getInfo()) and then use a for-loop to go through the employees ArrayList in order to call their getInfo() method.
