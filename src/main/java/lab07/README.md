@@ -14,7 +14,9 @@ Step-by-step
 1. Open the Labs project and then add a new package called lab7.
 2. Write a class called Program with a main() method in the lab7 package.
 3. Create the following class structure:
+
    ![alt text](image.png)
+
 4. Create a constructor for Shape to set its colour and position.
 5. As you can see, Circle extends Shape and Sphere extends Circle.
    a) Position is of type Point which is a class with built-in x and y.

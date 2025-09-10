@@ -1,0 +1,23 @@
+Topics:
+
+- Java Basics
+  - Getting started
+  - Vars and Selection
+  - Methods
+  - Arrays and Loops
+- Object-oriented programming (OOP)
+- Static fields and methods
+- More on statics
+- Enums and Strings
+- Collections and Generics
+- Exceptions
+- Inheritance
+- Polymorphism
+- Abstract classes
+- Interfaces
+- Introduction to testing
+- Accessing files
+- Accessing databases
+- Streams and Lambda
+- Threading
+- Object-oriented programming (OOP) challenge
