@@ -1,4 +1,4 @@
-Lab 01D
+<h1>Lab 01D</h1>
 
 Java basics – Arrays and loops
 
@@ -12,7 +12,9 @@ Part 1 – Getting started!
 
 1. Back in the labs project, created a new class called Program in a package called lab lab4 with a main() method.
 2. Declare an array of integers in the main() method as:
+   ```java
    int[ ] numbers = { 1, 3, -5, 7, 0, 4, 6, 8 };
+   ```
 
 Then, without using built-in commands in Java, do these tasks:
 • Task 1: Write code to find the sum of every number in numbers
@@ -48,6 +50,7 @@ Step-by-step
 
 1. Create a method called multiplicationTable() in the Lab.
 2. We want you to produce this output on the console.
+```
    1 2 3 4 5 6 7 8 9 10
    2 4 6 8 10 12 14 16 18 20
    3 6 9 12 15 18 21 24 27 30
@@ -58,11 +61,10 @@ Step-by-step
    8 16 24 32 40 48 56 64 72 80
    9 18 27 36 45 54 63 72 81 90
    10 20 30 40 50 60 70 80 90 100
+```
 
 Tip: Two nested for loops (count from 1..10) are best for this.
 Also, to print the product of two variables called row and col in five spaces, use a statement like:
 System.out.printf("%5d", col \* row);
 
 ** End **
-
-

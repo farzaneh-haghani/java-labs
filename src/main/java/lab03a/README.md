@@ -1,4 +1,4 @@
-Lab 03A
+<h1>Lab 03A</h1>
 
 Static fields and methods
 
@@ -103,8 +103,12 @@ In this section, you will explore the use of the static keyword. Defining the wo
 
 1. Create a static int field in Ball called worldW and another called worldH to represent the width and height of the world. You should see three balls bouncing!
 2. Create static method as
+
+```java
    public static void setWorld(int w, int h)
-   to set the static worldW and worldH values.
+```
+
+to set the static worldW and worldH values.
 3. In the Game() constructor, just before the line Timer t = new Timer(); invoke the setWorld() method of the Ball class to set the world's width and height for every Ball.
 4. Change the move() method in the Ball class to use the Ball.worldH and Ball.worldW values instead of 300px. You'll also need to change the paint() method to use the new static values (to draw the world's rectangle).
 5. Run and test your code.

@@ -27,8 +27,7 @@ public class Program {
     }
 
     private static String[] readCSV(String inFile) throws IOException {
-        File file = new File(inFile);
-        FileReader fileReader = new FileReader(file);
+        FileReader fileReader = new FileReader(inFile);
         BufferedReader bufferReader = new BufferedReader(fileReader);
         String line = bufferReader.readLine();
         StringBuilder result = new StringBuilder();
