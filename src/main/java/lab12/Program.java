@@ -1,11 +1,45 @@
 package lab12;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.*;
 
+import com.google.gson.Gson;
+
 public class Program {
-    public static void main(String[] args) {
+    public static void main(String[] args)  throws Exception{
         try {
+            Gson gson = new Gson();
+
+            //Read customers from JSON file
+            String fileName = "C:\\Users\\Admin\\Desktop\\farzaneh\\java-labs\\src\\main\\java\\lab12\\src\\customers.json";
+            String content = new String(Files.readAllBytes(Path.of(fileName)));
+            Customer[] customers = gson.fromJson(content, Customer[].class);
+
+            for(Customer customer:customers){
+                System.out.println(customer.getCustomerID());
+            }
+
+            //Convert Java objects to JSON
+            int[] nos = {1,3,5,7,9};
+            String res = gson.toJson(nos);
+            System.out.println(res);
+
+            String[] names= {"Bob","Fred","Wilma"};
+            res = gson.toJson(names);
+            System.out.println(res);
+
+            Student[] students = {
+                new Student("Bob",21), 
+                new Student("Fred",32), 
+                new Student("Wilma",26)
+            };
+            res = gson.toJson(students);
+            System.out.println(res);	
+
+
+            //Read courses, trainers, and trainersCourses from CSV files
             String[] courses = readCSV(
                     "C:\\Users\\Admin\\Desktop\\farzaneh\\java-labs\\src\\main\\java\\lab12\\src\\course.txt");
             String[] trainers = readCSV(
@@ -15,6 +49,8 @@ public class Program {
             FileWriter fileWriter = new FileWriter(
                     "C:\\Users\\Admin\\Desktop\\farzaneh\\java-labs\\src\\main\\java\\lab12\\src\\courseTrainer.txt");
 
+            
+            //Write course-trainer pairs to file
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
             for (int i = 0; i < trainersCourses.length; i = i + 2) {
@@ -28,9 +64,9 @@ public class Program {
 
             bufferedWriter.close();
         } catch (FileNotFoundException err) {
-            System.err.println("ff");
+            System.err.println(err);
         } catch (IOException err) {
-            System.err.println("iii");
+            System.err.println(err);
         }
     }
 
