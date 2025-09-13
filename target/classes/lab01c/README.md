@@ -1,4 +1,4 @@
-Lab 01C
+<h1>Lab 01C</h1>
 
 Java basics – Methods
  
