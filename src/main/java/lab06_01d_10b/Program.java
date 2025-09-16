@@ -1,4 +1,4 @@
-package lab06_10b;
+package lab06_01d_10b;
 
 import java.util.*;
 
@@ -37,5 +37,7 @@ public class Program {
         for (Account account : accounts) {
             System.out.println(account.getDetails());
         }
+
+        Account.makeDouble(100);
     }
 }

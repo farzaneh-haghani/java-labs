@@ -28,6 +28,7 @@ public class Program {
             String grade = getGrade(marks[i]);
             System.out.printf("%s grade: %s\n", names[i], grade);
         }
+        multiplicationTable();
     }
 
     public static String getGrade(int mark) {
@@ -46,4 +47,12 @@ public class Program {
         return grade;
     }
 
+    public static void multiplicationTable() {
+        for (int row = 1; row <= 10; row++) {
+            for (int col = 1; col <= 10; col++) {
+                System.out.printf("%5d", col * row);
+            }
+            System.out.println();
+        }
+    }
 }

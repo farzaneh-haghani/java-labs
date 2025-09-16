@@ -1,3 +1,14 @@
+/*
+Refactor:
+- Adding enums and interface.
+- Making thread safe from race conditions.
+- Removing never used methods or variables.
+
+Pattern:
+- Simple factory by using an interface and a concrete factory class that help us to prevent instantiation in the main.
+- Encapsulation by making fields private or protected and just having access to them by getter or setter methods.
+*/
+
 package Project;
 
 import java.time.LocalDateTime;

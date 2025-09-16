@@ -1,4 +1,4 @@
-package lab06_10b;
+package lab06_01d_10b;
 
 import java.util.Comparator;
 
